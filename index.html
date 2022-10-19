@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A08-10-S2-1 G6 LL Homepage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<header>
+			<a href="index.html"><img src="logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="quarters.html">Quarters</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="membercontact.html">Members + Contacts</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>This is <span>A08-10-S2-1 G6's</span><br>Accomplishments Through <span>LL SY 2022-2023</span></h2>
+				<p>This website aims to give you the accomplishments made by A08-10-S2-1<br>
+				G6. One of which is this Website!<br><br>
+				Press "Get Started" or the buttons at the top of this page to get started!</p>
+				<a href="aboutus.html">Get Started!</a>
+			</div>
+		</div>
+		<ul class="thumb">
+			<li><img src="thumb1.png" onclick="imgSlider('img1.png')"></li>
+			<li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+			<li><img src="thumb3.png" onclick="imgSlider('img3.png')"></li>
+			<li><img src="thumb4.png" onclick="imgSlider('img4.png')"></li>
+		</ul>
+		<div class="imgBox">
+			<img src="img1.png" class="lifelabs">
+		</div>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.lifelabs').src = anything;
+		}
+	</script>
+</body>
+</html>
